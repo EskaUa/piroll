@@ -22,7 +22,10 @@ body{
 	display: block;
 	clear: both;
 }
-
+h2{
+	font: 600 30px Montserrat;
+	color: #191919;
+}
 /*header*/
 .header-bg{
 	width: 100%;
@@ -63,15 +66,19 @@ body{
  /*header__descr*/
  .header__descr{
  	float: right;
- 	width: 40%;
+ 	width: 50%;
+ 	overflow: hidden;
  }
  .header__descr__title{
  	color: #1d1d1d;
  	font: 600 32px/48px Montserrat;
+
  }
  .header__descr__text{
  	font-size: 18px;
  	line-height: 28px;
+ 	background-color:rgba( 255, 255,255,.5);
+ 	padding: 10px 10px;
  }
  .btn{
  	color: #fff;
@@ -84,3 +91,101 @@ body{
  }
  /*/header__descr*/
 /*/header
+
+/*about*/
+.about{
+	background-color: #fff;
+	text-align: center;
+	padding: 90px 0 ;
+}
+
+.about__text{
+	color: #787878;
+	font-size: 16px;
+	padding: 0 60px;
+}
+.about__signature{
+	display: inline-block;
+	width: 300px;
+	height: 70px;
+	background: url(../img/icons/signature.png) no-repeat center center;
+}
+/*/about*/
+
+/*skills*/
+.skills{
+
+}
+.skills__descr{
+	width: 50%;
+	float: left;
+	background-color:#f8f9f9;
+	padding: 150px 60px 150px 0;  
+}
+.skill__subtitle{
+	font: 600 14px Montserrat;
+	color: #000;
+	margin-bottom: 15px;
+}
+.skills__inf{
+	width: 50%;
+	float: right;
+	background-color: #e9e9e9;
+}
+.progress__bar{
+	width: 100%;
+	height: 4px;
+	background-color: #d8d8d8;
+	position: relative;
+}
+.skill__design , .skill__web , .skill__marketing{
+	margin-bottom:  35px;
+}
+.progress__bar::before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	height: 4px;
+	background-color: #10c9c3;
+}
+.skill__design__progress::before{
+	content: '';
+	width: 75%;
+}
+.skill__web__progress::before{
+	content: '';
+	width: 90%;
+}
+.skill__marketing__progress::before{
+	content: '';
+	width: 65%;
+}
+/*/skills*/
+
+/*services*/
+
+.services{
+	background-color: #10c9c3;
+	padding: 70px 0;
+}
+.services__item{
+	float: left;
+	width: 25%;
+
+}
+
+.services__count , .services__descr{
+	font: 400 12px/1.6 Montserrat;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+.services__icon{
+	
+}
+.services__icon__item{
+	float: left;
+	margin-right: 10px;
+}
+/*/services*/
